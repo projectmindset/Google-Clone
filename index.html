@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+
+        <style>
+
+        body{
+            background-color: rgb(22, 22, 22);
+
+         }
+
+        h1{
+            font-size: xx-large;
+            text-align: center;
+            color: white;
+            height: 200px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            font-size: 500%;
+            display: flex;
+            
+        }
+
+        input[type=text]{
+            width: 50%;
+            height: 30px;
+            margin: 50px;
+            justify-content: center;
+            display: flex;
+            outline: 3px solid black;
+            position: relative;
+            left: 20%;
+            border-radius: 12px;
+        }
+
+        input[type=submit]{
+            background-color:rgb(63, 62, 62);
+            color: white;
+            border-radius: 12px;
+            text-align: center;
+            height: 40px;
+            width: 200px;
+            align-content: center;
+        }
+
+        a{
+            color: white;
+            padding-left: 12px;
+            text-align: left;
+            float: right;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: lightcyan;
+            text-decoration: underline;
+        }
+
+        #elements{
+            text-align: center;
+        }
+
+        input[type="submit"]:hover{
+            outline: 2px solid white;
+        }
+        
+        </style>
+    </head>
+    <body>
+
+        <a href="file:///C:/Users/Dell/Desktop/edX/html%20&%20css/Advanced%20Search.html">Advanced Search</a>
+        <a href="file:///C:/Users/Dell/Desktop/edX/html%20&%20css/Image%20Search.html?q=">Image Search</a>
+        <h1>Google</h1>
+
+        <div id="elements">
+            <form action="https://google.com/search">
+                <input type="text" name="q">
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky" name="btnI" value="1">
+                <!-- <input type="hidden" name="btnI" value="1"> -->
+            </form>
+        </div>
+        
+    </body>
+</html>
