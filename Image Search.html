@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Images</title>
+
+    <style>
+        body{
+            background-color: rgb(22, 22, 22);
+        }
+        #links{
+            text-align: right; 
+        }
+
+        a[href="file:///C:/Users/Dell/Desktop/edX/html%20&%20css/index.html"]{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        a:hover{
+            color: lightcyan;
+            text-decoration: underline;
+        }
+
+
+        .container{
+            color: white;
+            text-align: center; 
+        }
+        
+        .container > h1, h6{
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        #large{
+            font-size: 100px;
+            /* text-align: center;            text-align: center; */
+            color: white;   
+        }
+
+        #small{
+            font-size: large;
+            text-align: center;
+            color: white;
+        }
+
+        #searches {
+            align-items: center;
+            text-align: center;
+        }
+        input[type='text']{
+            width: 50%;
+            height: 30px;
+            margin: 50px;
+            display: flex;
+            outline: 3px solid black;
+            position: relative;
+            left: 20%;
+            border-radius: 12px;
+            margin-top:20px;
+        }
+
+        input[type=submit]{
+            background-color:gray;
+            color: white;
+            border-radius: 12px;
+            text-align: center;
+            height: 40px;
+            width: 120px;
+            align-content: center;
+            margin-bottom: 20px;   
+        }
+
+        input[type="submit"]:hover{
+            outline: 2px solid white;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div id="links">
+        <a href="file:///C:/Users/Dell/Desktop/edX/html%20&%20css/index.html">Back To Home</a>
+    </div>
+
+    <div class="container">
+        <h1 id="large">Google</h1>
+        <h6 id="small">images</h6>
+    </div>
+
+    <form action="https://www.google.com/search" method="get">    <!-- <form action="https://www.google.com/imghp?hl=EN"> -->
+        <div id="searches">
+            <input type="text" name="q" value="">
+            <input type="hidden" name="tbm" value="isch">
+            <input type="submit" value="Search Image"> 
+        </div>
+    </form>
+
+</body>
+</html>
